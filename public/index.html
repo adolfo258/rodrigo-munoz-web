@@ -3,16 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registra tu Marca</title>
+    <title>RM | Registro de Marcas</title>
+    <link rel="shortcut icon" href="assets/logo-small.ico">
+    <link rel="canonical" href="">
+    <meta name="description" content="Registro de marcas en Argentina, Registrar mi marca y logo.">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:type" content="WebSite">
+    <meta property="og:title" content="RM | Registro de Marcas">
+    <meta property="og:description" content="Registro de marcas en Argentina, Registrar mi marca y logo.">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="RM">
+    <meta property="og:image" content="assets/logo-descriptions.jpeg">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="RM | Registro de Marcas">
+    <meta name="twitter:description" content="Registro de marcas en Argentina, Registrar mi marca y logo.">
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "name": "RM | Registro de Marcas",
+            "url": "",
+            "logo": "assets/logo-descriptions.jpeg",
+            "contactPoint": [
+                {
+                    "@type": "ContactPoint",
+                    "telephone": "351 2135512",
+                    "contactType": "sales",
+                    "areaServed": [
+                        "Argentina"
+                    ],
+                    "availableLanguage": [
+                        "English",
+                        " Spanish"
+                    ]
+                }
+            ],
+            "sameAs": [
+                "https://www.instagram.com/abogado_rm/?hl=es-la"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "WebSite",
+            "name": "RM | Registro de Marcas",
+            "alternateName": "RM",
+            "url": ""
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+      "@context": "http://schema.org",
+      	"@type": "LocalBusiness",
+		"url": "",
+		"image" : "assets/logo-descriptions.jpeg",
+        "logo": "assets/logo-descriptions.jpeg",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Argentina",
+        "addressRegion": "X5000AMR Córdoba",
+        "streetAddress": ""
+      },
+      "description": "Registro de marcas en Argentina, Registrar mi marca y logo.",
+      "name": "RM | Registro de Marcas",
+	  "telephone": "351 2135512"
+    }
+    </script>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-
 </head>
 <body>
     <header class="header">
         <nav class="nav__container">
-            <img src="assets/brand-logo-transparent.png" alt="brand logo">
+            <a href="#home"><img src="assets/brand-logo-transparent.png" alt="brand logo"></a>
             <ul class="nav">
                 <li class="header__link"><a href="#home">HOME</a></li>
                 <li class="header__link"><a href="#benefits">BENEFICIOS</a></li>
@@ -23,10 +88,10 @@
     </header>
     <section id="home" class="section__home">
         <div class="wasap__icon__web">
-            <a href=""><img src="assets/whatsapp (1).png" alt="whatsapp icon"></a>
+            <a href="https://api.whatsapp.com/send?phone=543512135512&text=Hola!" target="_blank"><img src="assets/whatsapp (1).png" alt="whatsapp icon"></a>
         </div>
-        <a class="whasap__icon__movil" href="https://api.whatsapp.com/send?phone=543512436271&text=Hola!">
-            <img src="assets/whatsapp (1).png" alt="whatsapp">
+        <a class="whasap__icon__movil" href="https://api.whatsapp.com/send?phone=543512135512&text=Hola!" target="_blank">
+            <img src="assets/whatsapp (1).png" alt="whatsapp icon">
             <p>Escribinos!</p>
         </a>
         <div class="home__container">
@@ -170,18 +235,18 @@
                         <label for="name">Nombre</label>
                         <input name="name" id="name" type="text">
                         <label for="email">E-mail</label>
-                        <input name="email" id="email" type="email">
+                        <input name="email" id="email" type="email" required>
                     </div>
                     <div class="group">
                         <label for="cel">Celular</label>
-                        <input name="cel" id="cel" type="number">
+                        <input name="cel" id="cel" type="number" required>
                         <label for="marca">Nombre de tu marca</label>
                         <input name="marca" id="marca" type="text">
                     </div>
                 </div>
                 <div class="faq__textarea">
                     <label for="message">Tipo de producto o servicio que ofrece</label>
-                    <textarea placeholder="Contanos sobre tu emprendimiento..." name="message" id="message" cols="30" rows="10"></textarea>
+                    <textarea placeholder="Contanos sobre tu emprendimiento..." name="message" id="message" cols="30" rows="10" required></textarea>
                 </div>
                 <button type="submit">Enviar</button>
             </form>
@@ -196,7 +261,7 @@
         </div>
     </section>
     <footer class="footer">
-        <p class="made__by">Made by <a href="">Baenz</a></p>
+        <p class="made__by">Made by <a href="https://baenzmarketing.com.ar/" target="_blank">Baenz</a></p>
         <div class="footer__container">
             <div class="footer__item uno">
                 <h4>Formas de pago:</h4>
