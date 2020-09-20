@@ -147,7 +147,7 @@ body{
     width: fit-content;
     padding: 10px;
     border-radius: 3px;
-    background-color: rgba(41, 41, 41, .9) ;
+    background-color: rgb(247, 249, 249, .9) ;
     color: #3498db;
     font-size: 6em;
 }
@@ -156,6 +156,7 @@ body{
     padding: 7px;
     margin-top: 15px;
     font-size: 1.7em;
+    font-weight: 700;
     color: #313131;
     text-transform: uppercase;
     width: fit-content;
@@ -189,7 +190,7 @@ body{
 
 .benefits__parrafo {
     margin-top: 20px;
-    font-size: 1.2em;
+    font-size: 1.25em;
     padding-left: 20px;
 }
 
@@ -301,8 +302,8 @@ background: linear-gradient(to bottom, #3A6073, #16222A); /* W3C, IE 10+/ Edge, 
 }
 
 .card h3{
-    color: #3498db;
-    font-size: 1.5em;
+    color: #F7F9F9;
+    font-size: 2em;
     position: absolute;
     top: -50px;
     left: 0;
@@ -410,6 +411,10 @@ background: linear-gradient(to bottom, #3A6073, #16222A); /* W3C, IE 10+/ Edge, 
     padding-left: 5px;
 }
 
+.faq__aclaration{
+    font-size: 1.4em;
+    text-align: center;
+}
 /* ----------CONTACTO---------- */
 .popup__container{
     display: none;
@@ -719,17 +724,18 @@ background: linear-gradient(to bottom, #3A6073, #16222A); /* W3C, IE 10+/ Edge, 
         width: 180px;
     }
 
+    .benefits{
+        flex-direction: column;
+    }
+
     .benefits__list.uno{
         width: 100%;
     }
 
-    .benefits__list.dos{
-        display: none;
-    }
-
-    .law{
-        display: none;
-    }
+   .benefits__list.dos{
+       margin: 0 auto;
+       width: 50%;
+   }
 
     .cards__container{
         flex-direction: column;
@@ -764,7 +770,7 @@ background: linear-gradient(to bottom, #3A6073, #16222A); /* W3C, IE 10+/ Edge, 
     }
 
     .home__container h1{
-        font-size: 3em;
+        font-size: 3.5em;
     }
 
     .home__container p{
@@ -780,6 +786,10 @@ background: linear-gradient(to bottom, #3A6073, #16222A); /* W3C, IE 10+/ Edge, 
         margin-left: 10px;
     }
 
+    .benefits__list.dos{
+        width: 65%;
+    }
+
     .footer{
         font-size: .9em;
     }
@@ -792,6 +802,10 @@ background: linear-gradient(to bottom, #3A6073, #16222A); /* W3C, IE 10+/ Edge, 
 
     .whasap__icon__movil{
         display: flex;
+    }
+
+    .whasap__icon__movil p {
+        font-size: 1.5em;
     }
 
     .nav__container img{
@@ -809,7 +823,7 @@ background: linear-gradient(to bottom, #3A6073, #16222A); /* W3C, IE 10+/ Edge, 
     }
 
     body{
-        font-size: .7em;
+        font-size: .75em;
     }
 
     .home__container{
@@ -830,6 +844,10 @@ background: linear-gradient(to bottom, #3A6073, #16222A); /* W3C, IE 10+/ Edge, 
 
     .benefits__list__item {
         font-size: 1.25em;
+    }
+
+    .benefits__list.dos{
+        width: 90%;
     }
 
     .card{
@@ -858,6 +876,14 @@ background: linear-gradient(to bottom, #3A6073, #16222A); /* W3C, IE 10+/ Edge, 
         padding: 0;
     }
 
+    .faq__answer{
+        font-size: 1.2em;
+    }
+
+    .faq__aclaration{
+        font-size: 1.2em;
+    }
+
     .section__contact{
         padding-top: 90px;
     }
@@ -882,6 +908,8 @@ background: linear-gradient(to bottom, #3A6073, #16222A); /* W3C, IE 10+/ Edge, 
 
     .footer{
         height: fit-content;
+        margin-bottom: 15px;
+        font-size: 1.1em;
     }
 
     .footer__container{

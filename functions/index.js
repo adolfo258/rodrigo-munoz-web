@@ -9,7 +9,7 @@ const transport = nodemailer.createTransport({
     }
 }) 
 
-exports.contactEmail = functions.database.ref('marketing-digital-2c3b5/{id}').onCreate((snap, context) => {
+exports.contactEmail = functions.database.ref('rodrigo-munoz/{id}').onCreate((snap, context) => {
     const name = snap.val().name
     const email = snap.val().email
     const cel = snap.val().cel
@@ -26,10 +26,10 @@ const sendContactEmail = (name, email, cel, marca, message) => {
         subject: 'Mensaje de contacto Web',
         html:`
         <h1>Datos de Interesado</h1>
-        <p><strong>Nombre:</strong>${name}</p>
+        <p><strong>Nombre y Apellido:</strong> ${name}</p>
         <p><strong>Cel:</strong> ${cel}</p>
-        <p><strong>Cel:</strong> ${marca}</p>
-        <p><strong>Mensaje:</strong> ${message}</p>
+        <p><strong>Marca:</strong> ${marca}</p>
+        <p><strong>Producto o servicio:</strong> ${message}</p>
         <p><strong>Email:</strong> ${email}</p>
     `
     })
