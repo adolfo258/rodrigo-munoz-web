@@ -1,4 +1,4 @@
-const functions = require("firebase-functions");
+/* const functions = require("firebase-functions");
 const nodemailer = require("nodemailer");
 
 const transport = nodemailer.createTransport({
@@ -36,4 +36,4 @@ const sendContactEmail = (name, email, cel, marca, message) => {
     })
     .then(r => r)
     .catch(e => e);
-};
+}; */

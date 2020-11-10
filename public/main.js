@@ -1,4 +1,4 @@
-const form = document.getElementById("form");
+/* const form = document.getElementById("form");
 const popupBtn = document.getElementById("popupBtn");
 const popupContainer = document.getElementById("popupContainer");
 
@@ -23,3 +23,4 @@ form.addEventListener("submit", e => {
 popupBtn.addEventListener("click", () => {
   popupContainer.classList.remove("active");
 });
+ */
